@@ -49,14 +49,14 @@ layout: default
 
       <!-- Right column: name + bio + selected publications + projects -->
       <div class="col-md-9">
-        <h1 class="post-title">
-          {% if site.title == 'blank' %}
-            {{ site.first_name }} {{ site.middle_name }}
-            {{ site.last_name }} | 葛亚特
-          {% else %}
-            {{ site.title }}
-          {% endif %}
-        </h1>
+        <div class="name-annotation">
+          <span class="name-main">葛亚特</span>
+          <svg class="name-connector" viewBox="0 0 120 40">
+            <path d="M2,28 Q60,5 112,16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M104,11 L112,16 L104,21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="name-eng">Yate Ge</span>
+        </div>
         <div class="about-bio mb-3">{{ content }}</div>
 
         <h2 class="marker-highlight">

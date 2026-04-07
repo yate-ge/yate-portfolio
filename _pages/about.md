@@ -24,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Ph.D. candidate in Design at Tongji University, specializing in Human-Computer Interaction (HCI), Human-Robot Interaction (HRI), and intelligent agent interface design. My research explores how generative AI can enhance interactive systems, with a focus on LLM-driven robot programming, generative facial expression interfaces, and visual communication aids for human-robot collaboration.
+I am a Ph.D. candidate in Design at Tongji University, specializing in <span class="wavy-underline">Human-Computer Interaction (HCI)</span>, <span class="wavy-underline">Human-Robot Interaction (HRI)</span>, and <span class="wavy-underline">intelligent agent interface design</span>. My research explores how generative AI can enhance interactive systems, with a focus on LLM-driven robot programming, generative facial expression interfaces, and visual communication aids for human-robot collaboration.
 
-I have published multiple first-authored papers at top-tier venues including CHI, UIST, and VL/HCC.
+I have published multiple first-authored papers at top-tier venues including <span class="hand-check">CHI</span>, <span class="hand-check">UIST</span>, and <span class="hand-check">VL/HCC</span>.
