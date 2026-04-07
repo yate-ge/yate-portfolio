@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Graduate Student
+subtitle: "Ph.D. Candidate in Design, <a href='https://www.tongji.edu.cn'>Tongji University</a>"
 
 profile:
   align: right
@@ -24,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<!-- TODO: 在这里写你的个人简介 -->
+I am a Ph.D. candidate in Design at Tongji University, specializing in Human-Computer Interaction (HCI), Human-Robot Interaction (HRI), and intelligent agent interface design. My research explores how generative AI can enhance interactive systems, with a focus on LLM-driven robot programming, generative facial expression interfaces, and visual communication aids for human-robot collaboration.
 
-Welcome to Ge Yate's personal website. I am currently a graduate student. My research interests include ... (to be updated).
+I have published multiple first-authored papers at top-tier venues including CHI, UIST, and VL/HCC.
