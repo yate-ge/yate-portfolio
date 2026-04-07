@@ -37,11 +37,14 @@
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      padding-right: 6rem;
 
       .preview {
         display: inline-block;
+        margin-top: 0.2rem;
       }
+
 
       .abbr {
         margin-bottom: 0.5rem;
@@ -68,10 +71,31 @@
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: 700;
+      }
+
+      .periodical {
+        font-size: 0.85rem;
+      }
+
+      .venue-tag {
+        display: inline-block;
+        font-size: 0.7em;
+        font-weight: 500;
+        font-style: normal;
+        padding: 0.1em 0.5em;
+        margin-left: 0.4em;
+        border-radius: 3px;
+        background-color: #78dce8;
+        color: #2c292d;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
       }
 
       .author {
+        font-size: 0.85rem;
+
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 

@@ -5,9 +5,9 @@ layout: default
   <article>
     <div class="row">
       <!-- Left column: profile -->
-      <div class="col-md-3 text-center pr-4">
+      <div class="col-md-3 pr-4">
         {% if page.profile %}
-          <div class="profile" style="margin: 0 auto;">
+          <div class="profile text-center" style="margin: 0 auto;">
             {% if page.profile.image %}
               {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
               {% if page.profile.image_circular %}
@@ -27,28 +27,54 @@ layout: default
           </div>
         {% endif %}
 
-        <p class="desc mt-2">{{ page.subtitle }}</p>
+        <p class="text-center mt-2" style="font-weight: 700; font-size: 0.9rem;">Interaction Designer<br>HCI Researcher</p>
+        <p class="text-center desc mt-1">{{ page.subtitle }}</p>
 
         <!-- Social -->
         {% if page.social %}
-          <div class="social mt-3">
+          <div class="social text-center mt-3">
             <div class="contact-icons">{% social_links %}</div>
             <div class="contact-note">{{ site.contact_note }}</div>
           </div>
         {% endif %}
 
+        <!-- Academic Service -->
+        <hr class="mt-4 mb-2">
+        <div class="sidebar-section text-left">
+          <h6 style="font-weight: 700; font-size: 0.75rem;">Academic Service</h6>
+          <ul style="padding-left: 1rem; font-size: 0.75rem; list-style: none;">
+            <li>Reviewer, <strong>CHI</strong> — <em>Outstanding Review</em></li>
+            <li>Reviewer, <strong>HRI</strong></li>
+          </ul>
+        </div>
+
+        <!-- Teaching -->
+        <hr class="mt-2 mb-2">
+        <div class="sidebar-section text-left">
+          <h6 style="font-weight: 700; font-size: 0.75rem;">Teaching</h6>
+          <ul style="padding-left: 1rem; font-size: 0.75rem; list-style: none;">
+            <li>2025 <strong>Guest Lecturer</strong>, DS323 <em>AI in Design</em>, SUSTech — "Prototyping LLM-Powered Interactive Systems"</li>
+            <li>2025 <strong>Guest Lecturer</strong>, <em>Interaction Design</em> (UG), Tongji — "LLM Interaction Design"</li>
+            <li>2024 <strong>Guest Lecturer</strong>, <em>Interaction Design</em> (Grad), Tongji — "XR and Interaction Design"</li>
+            <li>2018–2023 <strong>Teaching Assistant</strong>, <em>Interaction Design</em>, <em>HCI Product &amp; System Design</em>, <em>Interaction Design Studio</em>, Tongji (8 semesters)</li>
+            <li>2021 <strong>Technical Mentor</strong>, Unity / Unity AR development for graduate course projects, Tongji</li>
+          </ul>
+        </div>
+
         <!-- News -->
         {% if page.announcements and page.announcements.enabled %}
-          <hr class="mt-4 mb-2">
-          <h2>
-            <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-          </h2>
+          <hr class="mt-2 mb-2">
+          <div class="sidebar-section text-left">
+            <h6 style="font-weight: 700; font-size: 0.75rem;">
+              <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+            </h6>
+          </div>
           {% include news.liquid limit=true %}
         {% endif %}
       </div>
 
       <!-- Right column: name + bio + selected publications + projects -->
-      <div class="col-md-9">
+      <div class="col-md-9 pl-5">
         <div class="name-annotation">
           <span class="name-main">葛亚特</span>
           <svg class="name-connector" viewBox="0 0 120 40">
@@ -59,7 +85,7 @@ layout: default
         </div>
         <div class="about-bio mb-3">{{ content }}</div>
 
-        <h2 class="marker-highlight">
+        <h2 class="marker-highlight mt-5">
           <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
         </h2>
         <div class="publications">
