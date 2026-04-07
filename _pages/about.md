@@ -2,14 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <!-- TODO: 填写你的机构和职位，例如 PhD Student @ XX University -->
+subtitle: Graduate Student
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <!-- TODO: 填写你的联系地址 -->
+  more_info: false
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
