@@ -80,7 +80,7 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 50%;
 
     .address {
       p {
@@ -175,36 +175,46 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1rem;
 
     a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 50%;
+      border: 1px solid var(--global-text-color);
+      margin: 0 0.2rem;
+      transition: all 0.2s ease-in-out;
+
       img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
+        width: 1rem;
+        height: 1rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
+        width: 1rem;
+        height: 1rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 1rem;
+          height: 1rem;
         }
       }
 
       i::before {
         color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
 
       &:hover {
         text-decoration: none;
+        border-color: var(--global-theme-color);
+        background-color: var(--global-theme-color);
 
         i::before {
-          color: var(--global-theme-color);
+          color: var(--global-hover-text-color);
         }
       }
     }

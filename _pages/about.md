@@ -2,10 +2,10 @@
 layout: about
 title: about
 permalink: /
-subtitle: "Ph.D. Candidate in Design, <a href='https://www.tongji.edu.cn'>Tongji University</a>"
+subtitle: "Ph.D. Candidate in Design, Tongji University"
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: false
