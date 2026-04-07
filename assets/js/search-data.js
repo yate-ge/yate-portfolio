@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/yate-portfolio/projects/";
           },
-        },{id: "nav-blog",
-          title: "blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/yate-portfolio/blog/";
-          },
         },{id: "nav-cv",
           title: "CV",
           description: "Yate Ge&#39;s Curriculum Vitae",
