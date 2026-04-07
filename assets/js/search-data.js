@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Ge Yate&#39;s Curriculum Vitae",
+          description: "Yate Ge&#39;s Curriculum Vitae",
           section: "Navigation",
           handler: () => {
             window.location.href = "/yate-portfolio/cv/";
