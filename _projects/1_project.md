@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sample Project
-description: <!-- TODO: 替换为你的项目描述 -->
+description: A sample project. Replace with your own description.
 img: assets/img/12.jpg
 importance: 1
 category: work
