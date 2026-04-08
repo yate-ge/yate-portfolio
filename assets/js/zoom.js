@@ -4,5 +4,4 @@ $(document).ready(function () {
     background: getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color") + "ee",
     margin: 250,
   });
-
 });

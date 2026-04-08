@@ -27,7 +27,10 @@ layout: default
           </div>
         {% endif %}
 
-        <p class="text-center mt-2" style="font-weight: 700; font-size: 0.9rem;">Interaction Designer<br>HCI Researcher</p>
+        <p class="text-center mt-2" style="font-weight: 700; font-size: 0.9rem;">
+          Interaction Designer<br>
+          HCI Researcher
+        </p>
         <p class="text-center desc mt-1">{{ page.subtitle }}</p>
 
         <!-- Social -->
@@ -56,7 +59,10 @@ layout: default
             <li>2025 <strong>Guest Lecturer</strong>, DS323 <em>AI in Design</em>, SUSTech — "Prototyping LLM-Powered Interactive Systems"</li>
             <li>2025 <strong>Guest Lecturer</strong>, <em>Interaction Design</em> (UG), Tongji — "LLM Interaction Design"</li>
             <li>2024 <strong>Guest Lecturer</strong>, <em>Interaction Design</em> (Grad), Tongji — "XR and Interaction Design"</li>
-            <li>2018–2023 <strong>Teaching Assistant</strong>, <em>Interaction Design</em>, <em>HCI Product &amp; System Design</em>, <em>Interaction Design Studio</em>, Tongji (8 semesters)</li>
+            <li>
+              2018–2023 <strong>Teaching Assistant</strong>, <em>Interaction Design</em>, <em>HCI Product &amp; System Design</em>,
+              <em>Interaction Design Studio</em>, Tongji (8 semesters)
+            </li>
             <li>2021 <strong>Technical Mentor</strong>, Unity / Unity AR development for graduate course projects, Tongji</li>
           </ul>
         </div>
@@ -92,7 +98,7 @@ layout: default
           {% bibliography %}
         </div>
 
-        {% assign sorted_projects = site.projects | sort: "importance" %}
+        {% assign sorted_projects = site.projects | sort: 'importance' %}
         {% if sorted_projects.size > 0 %}
           <h2 class="mt-4 marker-highlight marker-green">
             <a href="{{ '/projects/' | relative_url }}" style="color: inherit">projects</a>

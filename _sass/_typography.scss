@@ -5,39 +5,40 @@
 @use "variables" as v;
 
 @font-face {
-  font-family: 'Maple Mono';
-  src: url('../fonts/MapleMono-NF-CN-Light.ttf') format('truetype');
+  font-family: "Maple Mono";
+  src: url("../fonts/MapleMono-NF-CN-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Maple Mono';
-  src: url('../fonts/MapleMono-NF-CN-Regular.ttf') format('truetype');
+  font-family: "Maple Mono";
+  src: url("../fonts/MapleMono-NF-CN-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Maple Mono';
-  src: url('../fonts/MapleMono-NF-CN-Bold.ttf') format('truetype');
+  font-family: "Maple Mono";
+  src: url("../fonts/MapleMono-NF-CN-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Maple Mono';
-  src: url('../fonts/MapleMono-NF-CN-Italic.ttf') format('truetype');
+  font-family: "Maple Mono";
+  src: url("../fonts/MapleMono-NF-CN-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
-html, body {
-  font-family: 'Maple Mono', monospace;
+html,
+body {
+  font-family: "Maple Mono", monospace;
 }
 
 .marker-highlight {
@@ -45,7 +46,7 @@ html, body {
   display: inline-block;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 2px;
     left: -6px;
@@ -67,7 +68,8 @@ html, body {
 .news {
   font-size: 0.8rem;
 
-  table td, table th {
+  table td,
+  table th {
     font-size: 0.8rem;
   }
 }
@@ -89,7 +91,7 @@ html, body {
 
   // Hand-drawn marker circle
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -4px;
     left: -8px;
@@ -137,7 +139,7 @@ html, body {
   font-weight: 700;
 
   &::after {
-    content: ' \2713';
+    content: " \2713";
     font-size: 0.75em;
     color: rgba(169, 220, 118, 0.8);
     font-weight: 400;
