@@ -164,6 +164,38 @@ body {
   }
 }
 
+.sidebar-marker-list {
+  li {
+    position: relative;
+    padding-left: 0.95rem;
+    margin-bottom: 0.38rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.48rem;
+      width: 0.42rem;
+      height: 0.42rem;
+      background: rgba(255, 216, 102, 0.75);
+      border-radius: 58% 42% 55% 45% / 46% 54% 48% 52%;
+      transform: rotate(-12deg);
+      box-shadow: 1px 1px 0 rgba(255, 216, 102, 0.28);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sidebar-marker-list-purple {
+  li::before {
+    background: rgba(180, 143, 255, 0.78);
+    box-shadow: 1px 1px 0 rgba(180, 143, 255, 0.3);
+  }
+}
+
 p,
 h1,
 h2,

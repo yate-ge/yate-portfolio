@@ -1,15 +1,15 @@
 ---
 layout: project
 title: GenFaceUI
-description: Meta-Design of Generative Personalized Facial Expression Interfaces for Intelligent Agents
-description_zh: 面向智能体的生成式个性化面部表情界面元设计
+description: GenFaceUI explores generative personalized facial expression interfaces for intelligent agents from a meta-design perspective. Built on the GPFEI framework, it helps designers create facial templates, apply semantic tags, define context-expression rules, and iteratively test run-time generation within coherent, rule-bounded design spaces. A qualitative study with 12 designers showed gains in controllability and consistency while also revealing the need for better visual structure and lightweight explanations; I led the project’s system design, prototype development, and paper writing. The research was successfully published at CHI 2026.
+description_zh: GenFaceUI 从元设计视角探索面向智能体的生成式个性化面部表情界面。基于 GPFEI 框架，系统支持设计师创建表情模板、添加语义标签、定义情境—表情规则，并在受约束且保持一致性的设计空间中迭代测试运行时生成。我们通过 12 位设计师的定性研究发现，该系统提升了可控性与一致性，同时也揭示了对更清晰视觉机制与轻量解释支持的需求；我主导了项目的系统设计、原型开发与论文撰写。该项目研究成果顺利发表于 CHI 2026。
 img: assets/img/genfaceui_teaser.jpg
 importance: 1
 category: research
 team: Yate Ge, Lin Tian, Yi Dai, Shuhan Pan, Yiwen Zhang, Qi Wang, Weiwei Guo*, Xiaohua Sun*
-role: First Author, System Design, User Study, Paper Writing
+role: Team Leader, System Design, Development, User Study, Paper Writing
 date_range: 2024 – 2026
-note: Published at CHI 2026
+note: Published at CHI 2026 (CCF A)
 related_publications: false
 ---
 
@@ -21,7 +21,7 @@ related_publications: false
 
 ## Motivation
 
-Facial expressions are a key component of expressive intelligent agents — they improve usability, strengthen user engagement and trust, and support task performance. The rise of LLMs enables more flexible, personalized, and context-aligned expressive behaviors. However, the design space for **generative facial expression interfaces** remains underexplored, facing challenges of *control*, *coherence*, and *alignment* in run-time generation.
+Facial expressions are a key component of expressive intelligent agents — they improve usability, strengthen user engagement and trust, and support task performance. The rise of LLMs enables more flexible, personalized, and context-aligned expressive behaviors. However, the design space for **generative facial expression interfaces** remains underexplored, facing challenges of _control_, _coherence_, and _alignment_ in run-time generation.
 
 ## GPFEI Framework
 

@@ -45,9 +45,11 @@ layout: default
         <hr class="mt-4 mb-2">
         <div class="sidebar-section text-left">
           <h6 style="font-weight: 700; font-size: 0.75rem;">Academic Service</h6>
-          <ul style="padding-left: 1rem; font-size: 0.75rem; list-style: none;">
-            <li>Reviewer, <strong>CHI</strong> — <em>Outstanding Review</em></li>
-            <li>Reviewer, <strong>HRI</strong></li>
+          <ul class="sidebar-marker-list" style="padding-left: 0; margin-bottom: 0; font-size: 0.75rem; list-style: none;">
+            <li>Reviewer, <strong>CHI 2026 Papers</strong> — <em>Outstanding Reviews</em></li>
+            <li>Reviewer, <strong>CHI 2026 Posters</strong></li>
+            <li>Reviewer, <strong>CHI 2025 Late Breaking Work</strong></li>
+            <li>Reviewer, <strong>HRI 2025 Late Breaking Reports</strong></li>
           </ul>
         </div>
 
@@ -55,7 +57,7 @@ layout: default
         <hr class="mt-2 mb-2">
         <div class="sidebar-section text-left">
           <h6 style="font-weight: 700; font-size: 0.75rem;">Teaching</h6>
-          <ul style="padding-left: 1rem; font-size: 0.75rem; list-style: none;">
+          <ul class="sidebar-marker-list sidebar-marker-list-purple" style="padding-left: 0; margin-bottom: 0; font-size: 0.75rem; list-style: none;">
             <li>2025 <strong>Guest Lecturer</strong>, DS323 <em>AI in Design</em>, SUSTech — "Prototyping LLM-Powered Interactive Systems"</li>
             <li>2025 <strong>Guest Lecturer</strong>, <em>Interaction Design</em> (UG), Tongji — "LLM Interaction Design"</li>
             <li>2024 <strong>Guest Lecturer</strong>, <em>Interaction Design</em> (Grad), Tongji — "XR and Interaction Design"</li>
@@ -66,17 +68,6 @@ layout: default
             <li>2021 <strong>Technical Mentor</strong>, Unity / Unity AR development for graduate course projects, Tongji</li>
           </ul>
         </div>
-
-        <!-- News -->
-        {% if page.announcements and page.announcements.enabled %}
-          <hr class="mt-2 mb-2">
-          <div class="sidebar-section text-left">
-            <h6 style="font-weight: 700; font-size: 0.75rem;">
-              <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-            </h6>
-          </div>
-          {% include news.liquid limit=true %}
-        {% endif %}
       </div>
 
       <!-- Right column: name + bio + selected publications + projects -->
