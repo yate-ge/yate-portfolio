@@ -49,7 +49,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project/";
             },},{id: "projects-genfaceui",
           title: 'GenFaceUI',
-          description: "Meta-Design of Generative Personalized Facial Expression Interfaces for Intelligent Agents",
+          description: "GenFaceUI explores generative personalized facial expression interfaces for intelligent agents from a meta-design perspective. Built on the GPFEI framework, it helps designers create facial templates, apply semantic tags, define context-expression rules, and iteratively test run-time generation within coherent, rule-bounded design spaces. A qualitative study with 12 designers showed gains in controllability and consistency while also revealing the need for better visual structure and lightweight explanations; I led the project’s system design, prototype development, and paper writing. The research was successfully published at CHI 2026.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/genfaceui/";
             },},{id: "teachings-data-science-fundamentals",
