@@ -20,12 +20,13 @@
 
   .project-description {
     font-size: 0.95rem;
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
     margin-bottom: 0.75rem;
   }
 
   .project-meta {
     font-size: 0.8rem;
+    color: var(--global-text-color-light);
     margin-bottom: 0.3rem;
   }
 
@@ -40,7 +41,7 @@
     font-size: 0.95rem;
     line-height: 1.8;
     font-family:
-      "Inter",
+      "Plus Jakarta Sans",
       -apple-system,
       BlinkMacSystemFont,
       sans-serif;
@@ -48,11 +49,26 @@
     h2,
     h3 {
       font-family:
-        "Inter",
+        "Plus Jakarta Sans",
         -apple-system,
         BlinkMacSystemFont,
         sans-serif;
       margin-top: 3rem;
+    }
+
+    img {
+      border: 8px solid #fff;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+
+    .caption {
+      font-style: italic;
+      color: var(--global-text-color-light);
+      margin-top: 0.25rem;
+    }
+
+    &.project-content-wide {
+      max-width: 100%;
     }
   }
 }
@@ -94,13 +110,57 @@ ul.task-list input[type="checkbox"] {
 .card {
   background-color: var(--global-card-bg-color);
 
+  .card-img-top,
   .card-img {
     width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .card-img {
     padding-top: 1.25rem;
   }
 
   .card-title {
     color: var(--global-text-color);
+    font-size: 0.95rem;
+  }
+
+  .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-date {
+    font-size: 0.75rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .card-tag {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 1rem;
+    white-space: nowrap;
+
+    &.tag-color-0 { background: #e8f0fe; color: #1967d2; border: 1px solid #c5d9f7; }
+    &.tag-color-1 { background: #fce8e6; color: #c5221f; border: 1px solid #f5c6c2; }
+    &.tag-color-2 { background: #e6f4ea; color: #1e8e3e; border: 1px solid #c0e2cb; }
+    &.tag-color-3 { background: #fef7e0; color: #b05a00; border: 1px solid #f5dfab; }
+    &.tag-color-4 { background: #f3e8fd; color: #7627bb; border: 1px solid #dfc5f5; }
+    &.tag-color-5 { background: #e0f7fa; color: #00838f; border: 1px solid #b2ebf2; }
+    &.tag-color-6 { background: #fce4ec; color: #c2185b; border: 1px solid #f8bbd0; }
+    &.tag-color-7 { background: #e8eaf6; color: #3949ab; border: 1px solid #c5cae9; }
   }
 
   .card-body {
@@ -194,6 +254,11 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+  > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .card {
     img {
       width: 100%;
@@ -201,11 +266,11 @@ ul.task-list input[type="checkbox"] {
   }
 
   .col {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 
   .project-inline {
-    padding: 0.25rem 0 1.25rem;
+    padding: 0.25rem 6rem 1.25rem 0;
     border-bottom: 1px solid var(--global-divider-color);
     background: transparent;
     width: 100%;
@@ -228,6 +293,8 @@ ul.task-list input[type="checkbox"] {
 
     .project-inline-img {
       width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
       border-radius: 0.5rem;
       display: block;
     }
@@ -248,6 +315,11 @@ ul.task-list input[type="checkbox"] {
       font-size: 0.88rem;
       line-height: 1.6;
       margin-bottom: 0.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 

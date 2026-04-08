@@ -13,7 +13,18 @@
       {% endif %}
       <div class="card-body">
         <h2 class="card-title">{{ project.title }}</h2>
+        {% if project.date_range %}
+          <p class="card-date">{{ project.date_range }}</p>
+        {% endif %}
         <p class="card-text">{{ project.description }}</p>
+        {% if project.tags %}
+          <div class="card-tags">
+            {% for tag in project.tags %}
+              {% assign tag_hash = tag | size | plus: forloop.index | modulo: 8 %}
+              <span class="card-tag tag-color-{{ tag_hash }}">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
         <div class="row ml-1 mr-1 p-0">
           {% if project.github %}
             <div class="github-icon">

@@ -1,16 +1,17 @@
 ---
 layout: project
 title: GenFaceUI
-description: GenFaceUI explores generative personalized facial expression interfaces for intelligent agents from a meta-design perspective. Built on the GPFEI framework, it helps designers create facial templates, apply semantic tags, define context-expression rules, and iteratively test run-time generation within coherent, rule-bounded design spaces. A qualitative study with 12 designers showed gains in controllability and consistency while also revealing the need for better visual structure and lightweight explanations; I led the project's system design, prototype development, and paper writing. The research was successfully published at CHI 2026.
-description_zh: GenFaceUI 从元设计视角探索面向智能体的生成式个性化面部表情界面。基于 GPFEI 框架，系统支持设计师创建表情模板、添加语义标签、定义情境—表情规则，并在受约束且保持一致性的设计空间中迭代测试运行时生成。我们通过 12 位设计师的定性研究发现，该系统提升了可控性与一致性，同时也揭示了对更清晰视觉机制与轻量解释支持的需求；我主导了项目的系统设计、原型开发与论文撰写。该项目研究成果顺利发表于 CHI 2026。
+description: GenFaceUI explores generative personalized facial expression interfaces for intelligent agents from a meta-design perspective. Built on the GPFEI framework, it helps designers create facial templates, apply semantic tags, define context-expression rules, and iteratively test run-time generation within coherent, rule-bounded design spaces. A qualitative study with 12 designers showed gains in controllability and consistency while also revealing the need for better visual structure and lightweight explanations; I led the project's system design, prototype development, and paper writing. An early version was presented as a poster at UIST 2025, and the full research was published at CHI 2026.
+description_zh: GenFaceUI 以元设计视角切入，探索如何让设计师为智能体打造生成式个性化表情界面。我们提出 GPFEI 框架，让设计师可以创建表情模板、标注语义、制定情境与表情的映射规则，并在可控的设计空间中反复测试运行时的生成效果。12 位设计师参与的定性研究表明，系统显著提升了表情的可控性与一致性，也指出了对更直观的视觉结构和轻量化解释的需求。本人主导了系统设计、原型开发与论文撰写。早期成果以 Poster 形式发表于 UIST 2025，完整研究发表于 CHI 2026。
 img: assets/img/genfaceui_teaser.jpg
 importance: 1
 category: research
 team: Yate Ge, Lin Tian, Yi Dai, Shuhan Pan, Yiwen Zhang, Qi Wang, Weiwei Guo*, Xiaohua Sun*
 role: Team Leader, System Design, Development, User Study, Paper Writing
-date_range: 2024 – 2026
-note: Published at CHI 2026 (CCF A)
+date_range: Jun 2025 – Sep 2025
+note: Poster at UIST 2025, Full Paper at CHI 2026 (CCF A)
 related_publications: false
+tags: [human-robot interaction, human-agent interaction, LLM, generative UI, meta-design]
 ---
 
 <div class="text-center mb-4">
@@ -19,38 +20,48 @@ related_publications: false
 </div>
 </div>
 
-<div class="row mt-5">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/genfaceui_framework.png" title="GPFEI Framework" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="caption">
-  The <strong>Generative Personalized Facial Expression Interface (GPFEI)</strong> framework organizes the design space across two temporal phases. At <em>design time</em>, human designers author templates — defining facial element compositions, semantic tags, color palettes, and context-to-expression mapping rules that bound the generative space. At <em>run time</em>, an LLM-powered "AI designer" interprets context signals (dialogue content, user state, task type) and produces character-specific, situation-sensitive facial expressions within those designer-defined constraints. The framework reframes the designer's role from authoring every expression asset to <em>meta-designing</em> the rules that govern AI generation — enabling scalable personalization without sacrificing coherence.
-</div>
+## GPFEI Framework
 
-<div class="row mt-5">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/genfaceui_architecture.png" title="GenFaceUI System" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="caption">
-  <strong>GenFaceUI</strong> is a proof-of-concept meta-design tool that operationalizes the GPFEI framework through four tightly integrated components. The <em>Template Composer</em> allows designers to build facial element assemblies and annotate each element with semantic tags (e.g., <code>eye-happy</code>, <code>brow-angry</code>), establishing a structured vocabulary for generation. The <em>Rule Authoring Panel</em> enables definition of context-expression mapping rules — logical conditions that link dialogue or interaction states to specific emotional outputs. The <em>LLM Backend</em> (GPT-4o) interprets these rules at run time, selects and recombines tagged elements, and generates expression sequences that satisfy the authored constraints. The <em>Iterative Testing Console</em> closes the loop by letting designers preview generated outputs inline, identify misalignments, and refine rules without leaving the tool.
-</div>
+Generative facial expression interfaces introduce a different design problem from traditional asset-authored expression systems. Instead of fully specifying every facial state before deployment, designers need to define the conditions, constraints, and visual vocabulary that will guide generation at run time. To address this, we proposed the **Generative Personalized Facial Expression Interface (GPFEI)** framework from a meta-design perspective.
 
-<div class="row mt-5">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/genfaceui_overview.png" title="GenFaceUI Interface" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="caption">
-  The GenFaceUI design canvas provides a unified workspace for template composition, semantic tagging, and rule authoring. The left panel exposes a library of facial elements organized by region (eyes, brows, mouth, accessories) and emotional valence. The central canvas supports direct manipulation — designers drag elements onto a character template, resize and layer components, and assign semantic tags via a contextual menu. The right panel hosts the rule editor, where context conditions and expression outputs are configured through a structured form. A live preview pane renders the current generation state in response to user-specified test inputs, enabling rapid iteration. The toolbar provides one-click access to constraint management — locking elements that must remain stable across generated variants to preserve character identity.
-</div>
+GPFEI structures the design space around three core elements: **rule-bounded generative spaces**, **character identity**, and **context-expression mapping**. At design time, designers define facial elements, layouts, colors, semantic tags, and mapping rules that constrain the space of possible outputs. At run time, the AI system interprets interaction context and generates facial expressions that remain aligned with those authored constraints. This reframes the designer's role from manually authoring every expression asset to designing the rules and structures through which the system can evolve expressively over time.
 
-<div class="row mt-5">
+<div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/genfaceui_tasks.png" title="Design Task Outputs" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/genfaceui_framework.png" title="GPFEI Framework" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
-<div class="caption">
-  Output examples from three design tasks completed by study participants, each probing a distinct point in the design space. <strong>Task 1 (Basic Chatbot)</strong> demonstrates how the framework handles a minimal character: a simple round face with two expressive states generated from a single rule set — illustrating that the tool remains approachable even for constrained scenarios. <strong>Task 2 (Service Robot)</strong> shows role-differentiated customization: participants designed two distinct character skins (receptionist vs. technical support) that share an underlying rule set but diverge visually through tagged element substitution — demonstrating how GPFEI separates identity configuration from behavioral logic. <strong>Task 3 (AI Companion)</strong> presents the richest outputs, with participants authoring nuanced multi-condition rule trees that produce varied affective responses to emotional dialogue cues — evidence that the meta-design approach scales to high-complexity, personalization-heavy scenarios without losing designer control.
+<div class="caption">Overview of the GPFEI framework.</div>
+
+## GenFaceUI System
+
+To operationalize the framework, we developed **GenFaceUI**, a proof-of-concept meta-design tool for generative personalized facial expression interfaces. The system supports the full workflow of facial expression interface design: creating facial templates, assigning semantic tags to visual elements, authoring context-expression rules, and testing generation outcomes with the model in the loop. Rather than treating generation as an opaque backend process, GenFaceUI makes the structure of the design space visible and editable to designers.
+
+The system combines a design canvas, semantic element management, rule authoring, and iterative preview into one environment. Designers can compose faces from modular visual elements, define how expressions should change across contexts, and preserve character consistency by explicitly constraining what can or cannot vary. This makes the system suitable not only for expressive chatbot faces, but also for role-specific service agents and more personalized AI companions.
+
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/genfaceui_architecture.png" title="GenFaceUI Architecture" class="img-fluid rounded" zoomable=true %}
+  </div>
 </div>
+<div class="caption">GenFaceUI architecture.</div>
+
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/genfaceui_overview.png" title="GenFaceUI Interface" class="img-fluid rounded" zoomable=true %}
+  </div>
+</div>
+<div class="caption">GenFaceUI interface.</div>
+
+## Designer Study
+
+We evaluated GenFaceUI through a **qualitative study with 12 designers** using three representative tasks: designing a basic chatbot face, customizing a service robot with role-specific visual identities, and creating a personalized AI companion. These tasks were chosen to cover different levels of complexity and different forms of character adaptation, allowing us to examine how designers engaged with meta-design practices in realistic scenarios.
+
+The study showed that designers perceived clear gains in **controllability** and **consistency** when working with rule-based generative expressions, while also surfacing important limitations. Participants needed more structured visual mechanisms for understanding the design space and lighter-weight explanations of how system outputs were produced. These findings suggest that future generative facial expression tools should support not only flexible generation, but also stronger interpretability and designer-facing scaffolding.
+
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/genfaceui_tasks.png" title="Designer Study Tasks" class="img-fluid rounded" zoomable=true %}
+  </div>
+</div>
+<div class="caption">Three design tasks used in the study.</div>
