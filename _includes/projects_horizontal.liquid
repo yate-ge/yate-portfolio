@@ -1,16 +1,42 @@
-<div class="col mb-4">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      <div class="row no-gutters">
+{% if include.plain %}
+  {% assign project_outer_col_class = 'col-12 mb-4 px-0' %}
+{% else %}
+  {% assign project_outer_col_class = 'col mb-4' %}
+{% endif %}
+<div class="{{ project_outer_col_class }}">
+  {% if include.plain %}
+    {% assign project_container_class = 'project-inline' %}
+    {% assign project_link_class = 'project-inline-link' %}
+    {% assign project_row_class = 'project-inline-layout' %}
+    {% assign project_image_col_class = 'project-inline-media' %}
+    {% assign project_text_col_class = 'project-inline-copy' %}
+    {% assign project_image_class = 'project-inline-img' %}
+    {% assign project_body_class = 'project-inline-body' %}
+    {% assign project_title_class = 'project-inline-title' %}
+    {% assign project_text_class = 'project-inline-text' %}
+  {% else %}
+    {% assign project_container_class = 'card h-100 hoverable' %}
+    {% assign project_link_class = '' %}
+    {% assign project_row_class = 'row no-gutters' %}
+    {% assign project_image_col_class = 'col-md-6' %}
+    {% assign project_text_col_class = 'col-md-6' %}
+    {% assign project_image_class = 'card-img' %}
+    {% assign project_body_class = 'card-body' %}
+    {% assign project_title_class = 'card-title' %}
+    {% assign project_text_class = 'card-text' %}
+  {% endif %}
+  <a class="{{ project_link_class }}" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+    <div class="{{ project_container_class }}">
+      <div class="{{ project_row_class }}">
         {% if project.img %}
-          <div class="col-md-6">
-            {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 768px) 156px, 50vw" alt="project thumbnail" class="card-img" %}
+          <div class="{{ project_image_col_class }}">
+            {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 768px) 156px, 50vw" alt="project thumbnail" class=project_image_class %}
           </div>
         {% endif %}
-        <div class="{% if project.img %}col-md-6{% else %}col-md-12{% endif %}">
-          <div class="card-body">
-            <h3 class="card-title">{{ project.title }}</h3>
-            <p class="card-text">{{ project.description }}</p>
+        <div class="{% if project.img %}{{ project_text_col_class }}{% else %}{% if include.plain %}project-inline-copy{% else %}col-md-12{% endif %}{% endif %}">
+          <div class="{{ project_body_class }}">
+            <h3 class="{{ project_title_class }}">{{ project.title }}</h3>
+            <p class="{{ project_text_class }}">{{ project.description }}</p>
             <div class="row ml-1 mr-1 p-0">
               {% if project.github %}
                 <div class="github-icon">

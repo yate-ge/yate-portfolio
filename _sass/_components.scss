@@ -36,15 +36,22 @@
 
   .project-content {
     font-size: 0.95rem;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family:
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
 
     h2,
     h3 {
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
       margin-top: 3rem;
     }
   }
-
 }
 
 // Checklist
@@ -177,6 +184,10 @@ ul.task-list input[type="checkbox"] {
       .card-title {
         color: var(--global-theme-color);
       }
+
+      .project-inline-title {
+        color: var(--global-theme-color);
+      }
     }
   }
 
@@ -188,6 +199,59 @@ ul.task-list input[type="checkbox"] {
 
   .col {
     padding-bottom: 1rem;
+  }
+
+  .project-inline {
+    padding: 0.25rem 0 1.25rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    background: transparent;
+    width: 100%;
+
+    .project-inline-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.75rem;
+    }
+
+    .project-inline-media {
+      flex: 0 0 28%;
+      max-width: 28%;
+    }
+
+    .project-inline-copy {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
+    .project-inline-img {
+      width: 100%;
+      border-radius: 0.5rem;
+      display: block;
+    }
+
+    .project-inline-body {
+      padding: 0;
+    }
+
+    .project-inline-title {
+      color: var(--global-text-color);
+      font-size: 1.25rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .project-inline-text {
+      color: var(--global-text-color);
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .col:last-child .project-inline {
+    border-bottom: none;
+  }
+
+  .project-inline-link {
+    display: block;
+    width: 100%;
   }
 
   .grid-sizer,
@@ -203,6 +267,25 @@ ul.task-list input[type="checkbox"] {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .projects {
+    .project-inline {
+      .project-inline-layout {
+        display: block;
+      }
+
+      .project-inline-media,
+      .project-inline-copy {
+        max-width: 100%;
+      }
+
+      .project-inline-body {
+        padding: 1rem 0 0;
+      }
+    }
   }
 }
 

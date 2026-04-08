@@ -203,6 +203,20 @@
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
     }
+
+    li > .row > div:last-child {
+      border-bottom: 1px solid var(--global-divider-color);
+      padding-bottom: 1.25rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+
+      > .row > div:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
   }
 }
 

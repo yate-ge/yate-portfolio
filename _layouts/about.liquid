@@ -94,19 +94,21 @@ layout: default
         <h2 class="marker-highlight mt-5">
           <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
         </h2>
-        <div class="publications">
+        <div class="publications about-publications">
           {% bibliography %}
         </div>
 
         {% assign sorted_projects = site.projects | sort: 'importance' %}
         {% if sorted_projects.size > 0 %}
-          <h2 class="mt-4 marker-highlight marker-green">
-            <a href="{{ '/projects/' | relative_url }}" style="color: inherit">projects</a>
-          </h2>
-          <div class="row row-cols-1 row-cols-md-2">
-            {% for project in sorted_projects %}
-              {% include projects.liquid %}
-            {% endfor %}
+          <div class="projects">
+            <h2 class="mt-5 marker-highlight marker-green">
+              <a href="{{ '/projects/' | relative_url }}" style="color: inherit">projects</a>
+            </h2>
+            <div class="row row-cols-1 mt-3">
+              {% for project in sorted_projects %}
+                {% include projects_horizontal.liquid plain=true %}
+              {% endfor %}
+            </div>
           </div>
         {% endif %}
       </div>
