@@ -1,0 +1,73 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post project-detail">
+  <!-- Project Hero: cover image + meta info -->
+  <header class="project-hero">
+    <div class="row align-items-start">
+      {% if page.img %}
+        <div class="col-md-5">
+          <div class="project-cover">
+            {%
+              include figure.liquid
+              loading="eager"
+              path=page.img
+              class="img-fluid rounded z-depth-1"
+              alt=page.title
+            %}
+          </div>
+        </div>
+      {% endif %}
+      <div class="{% if page.img %}col-md-7{% else %}col-md-12{% endif %}">
+        <h1 class="project-title">{{ page.title }}</h1>
+        {% if page.description %}
+          <p class="project-description">{{ page.description }}</p>
+        {% endif %}
+        {% if page.description_zh %}
+          <p class="project-description">{{ page.description_zh }}</p>
+        {% endif %}
+        {% if page.team %}
+          <div class="project-meta">
+            <strong>Team:</strong> {{ page.team }}
+          </div>
+        {% endif %}
+        {% if page.role %}
+          <div class="project-meta">
+            <strong>Role:</strong> {{ page.role }}
+          </div>
+        {% endif %}
+        {% if page.date_range %}
+          <div class="project-meta">
+            <strong>Period:</strong> {{ page.date_range }}
+          </div>
+        {% endif %}
+        {% if page.note %}
+          <div class="project-note mt-2">
+            <span class="hand-star">{{ page.note }}</span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  <hr class="mt-4 mb-4">
+
+  <!-- Project Content -->
+  <article class="project-content">
+    {{ content }}
+  </article>
+
+  {% if page.related_publications %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  {% endif %}
+</div>

@@ -2,6 +2,51 @@
  * Reusable component styles: Cards, captions, profiles, etc.
  ******************************************************************************/
 
+// Project detail page
+.project-detail {
+  .project-hero {
+    margin-bottom: 1rem;
+  }
+
+  .project-cover {
+    max-width: 100%;
+  }
+
+  .project-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.75rem;
+  }
+
+  .project-meta {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .project-note {
+    font-size: 0.8rem;
+    color: var(--global-theme-color);
+  }
+
+  .project-content {
+    font-size: 0.95rem;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+    h2,
+    h3 {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      margin-top: 3rem;
+    }
+  }
+
+}
+
 // Checklist
 
 ul.task-list {

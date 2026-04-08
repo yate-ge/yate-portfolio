@@ -133,6 +133,21 @@ body {
   text-decoration-thickness: 1.5px;
 }
 
+// Hand-drawn star
+.hand-star {
+  position: relative;
+  font-style: italic;
+
+  &::before {
+    content: "\2733\00a0";
+    color: #fc9867;
+    font-style: normal;
+    font-size: 0.9em;
+    transform: rotate(-10deg);
+    display: inline-block;
+  }
+}
+
 // Hand-drawn checkmark
 .hand-check {
   position: relative;
