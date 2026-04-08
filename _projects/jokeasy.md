@@ -17,7 +17,7 @@ description_zh: >-
   工作流逐步打磨作品。18 位参与者（含职业喜剧演员和 HCI/AI 学者）的定性研究显示，这一流程
   有效激发灵感且不削弱创作者的主导权。我们通过 Figma 插件的形式构建交互原型进行测试。
   本人作为研究生课程"人机智能协同"的助教，主导了研究设计、系统开发与论文撰写。
-img: assets/img/publication_preview/jokeasy.png
+img: assets/img/publication_preview/jokeasy.webp
 importance: 3
 category: research
 team: Yate Ge, Lin Tian, Chiqian Xu, Luyao Xu, Meiying Li, Yuanda Hu, Weiwei Guo*
@@ -42,7 +42,7 @@ The system is built around three interrelated design considerations: **(DC1)** a
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/jokeasy_interface.png" title="Jokeasy Main Interface" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/jokeasy_interface.webp" title="Jokeasy Main Interface" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -57,10 +57,10 @@ In the **Inspiration Validation and Collaborative Refinement** phase, the writer
 
 <div class="row mt-3">
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/jokeasy_inspiration.png" title="Inspiration Modification" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/jokeasy_inspiration.webp" title="Inspiration Modification" class="img-fluid rounded" zoomable=true %}
   </div>
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/jokeasy_jokemap.png" title="Joke Maps Modification" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/jokeasy_jokemap.webp" title="Joke Maps Modification" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -73,7 +73,7 @@ The front-end of Jokeasy is developed as a Figma widget plugin; the back-end is 
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/jokeasy_pipeline.png" title="LLM Pipeline" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/jokeasy_pipeline.webp" title="LLM Pipeline" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -88,7 +88,7 @@ Most participants (13/18) favoured Jokeasy over the baseline. They described its
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/jokeasy_study.png" title="User Study" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/jokeasy_study.webp" title="User Study" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -97,7 +97,7 @@ Most participants (13/18) favoured Jokeasy over the baseline. They described its
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/jokeasy_baseline.png" title="Baseline System" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/jokeasy_baseline.webp" title="Baseline System" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -106,7 +106,7 @@ Most participants (13/18) favoured Jokeasy over the baseline. They described its
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/jokeasy_usecase.jpeg" title="Use Case Comparison" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/jokeasy_usecase.webp" title="Use Case Comparison" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">

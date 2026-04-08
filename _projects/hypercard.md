@@ -18,7 +18,7 @@ description_zh: >-
   交互式 AR 场景。系统支持多种输入模态（语音、人脸识别、屏幕手势、UI 组件）以及七类卡片
   （操作、用户输入、逻辑、变量、信号、对象、AI）。基于 Unity 和 Vuforia 开发，原型演示了
   语音控灯、多人 AR 高尔夫、表情控天气、编程挑战关卡等场景。
-img: assets/img/publication_preview/hypercard.png
+img: assets/img/publication_preview/hypercard.webp
 content_wide: true
 importance: 8
 category: design work
@@ -32,24 +32,24 @@ tags: [AR, visual programming]
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/hypercard_page_1.png" title="Discover & Insight / Concept" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/hypercard_page_1.webp" title="Discover & Insight / Concept" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/hypercard_page_2.png" title="How to Use / Authoring System / Card Types" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/hypercard_page_2.webp" title="How to Use / Authoring System / Card Types" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/hypercard_page_3.png" title="UX & UI / Mobile App Features" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/hypercard_page_3.webp" title="UX & UI / Mobile App Features" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/hypercard_page_4.png" title="Prototypes" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/hypercard_page_4.webp" title="Prototypes" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>

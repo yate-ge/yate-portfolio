@@ -36,6 +36,6 @@ tags: [robotics art]
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/zhiqixinsheng_choreography.jpeg" title="动作编排" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/zhiqixinsheng_choreography.webp" title="动作编排" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>

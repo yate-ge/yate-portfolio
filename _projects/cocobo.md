@@ -19,7 +19,7 @@ description_zh: >-
   16 名参与者的用户研究验证了无编程背景的用户也能独立完成机器人服务程序的创建与修改。
   本人在该项目中主导了系统设计、开发与论文撰写。成果发表于可视化语言与终端用户开发领域旗舰会议
   IEEE VL/HCC。
-img: assets/img/publication_preview/cocobo.jpg
+img: assets/img/publication_preview/cocobo.webp
 hero_stacked: true
 importance: 5
 category: research
@@ -39,7 +39,7 @@ The system's UI consists of two main views: **(A) Flowchart View**, which includ
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/cocobo_overview.jpeg" title="Cocobo System Overview" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/cocobo_overview.webp" title="Cocobo System Overview" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -58,7 +58,7 @@ Cocobo supports three complementary ways to create and modify robot programs:
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/cocobo_authoring.jpeg" title="Authoring Programs via Conversation" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/cocobo_authoring.webp" title="Authoring Programs via Conversation" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -67,10 +67,10 @@ Cocobo supports three complementary ways to create and modify robot programs:
 
 <div class="row mt-3">
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/cocobo_flowchart.jpeg" title="Flowchart Editing" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/cocobo_flowchart.webp" title="Flowchart Editing" class="img-fluid rounded" zoomable=true %}
   </div>
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/cocobo_magicdebug.jpeg" title="MagicDebug" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/cocobo_magicdebug.webp" title="MagicDebug" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -83,7 +83,7 @@ The backend is developed using Node.js, integrating GPT-4 API for LLM-powered fu
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/cocobo_pipeline.jpeg" title="LLM Pipeline" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/cocobo_pipeline.webp" title="LLM Pipeline" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">

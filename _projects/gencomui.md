@@ -17,7 +17,7 @@ description_zh: >-
   终端用户机器人编程。一项针对人际视觉沟通实践的形成性研究指导了系统设计，20 人组内用户实验
   表明生成式视觉辅助通过提供持续的视觉反馈和支持迭代式任务修正，有效提升了沟通质量。本人主导了
   项目的系统设计、开发与论文撰写。
-img: assets/img/publication_preview/gencomui.jpg
+img: assets/img/publication_preview/gencomui.webp
 hero_stacked: true
 hero_avoid_scaling: true
 importance: 4
@@ -36,7 +36,7 @@ In service robotics, verbal communication allows non-expert users to naturally e
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/gencomui_teaser.jpg" title="GenComUI Overview" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/gencomui_teaser.webp" title="GenComUI Overview" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 <div class="caption">Overview of GenComUI: generative visual aids support verbal task communication between humans and robots.</div>
@@ -47,7 +47,7 @@ To inform the design of GenComUI, we conducted an observational study examining 
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/gencomui_formative.jpg" title="Formative Study" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/gencomui_formative.webp" title="Formative Study" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 <div class="caption">Formative study: observing how humans use visual tools to support verbal spatial task communication.</div>
@@ -63,14 +63,14 @@ Based on the design considerations, we developed **GenComUI**, an LLM-based robo
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/gencomui_architecture.jpg" title="GenComUI Architecture" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/gencomui_architecture.webp" title="GenComUI Architecture" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 <div class="caption">GenComUI system architecture: (A) Voice Interaction, (B) User Intention Understanding, (C) Generative Visual Aids, (D) Task Program Synthesis and Deployment.</div>
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/gencomui_interface.png" title="GenComUI Communication Process" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/gencomui_interface.webp" title="GenComUI Communication Process" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 <div class="caption">The communication process in GenComUI: (A) multi-turn task specification with progressive visual feedback, (B) visual confirmation of complete task flow, (C) task testing and deployment.</div>
@@ -83,7 +83,7 @@ The results showed that generative visual aids **enhanced communication quality*
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/gencomui_baseline.png" title="User Study Setup" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/gencomui_baseline.webp" title="User Study Setup" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 <div class="caption">Experimental setup: (Left) paper floor plan for baseline condition, (Right) comparison between baseline system and GenComUI.</div>

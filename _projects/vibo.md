@@ -16,7 +16,7 @@ description_zh: >-
   可视化交互原型构建器进行界面与流程设计、以及通过混合现实用户模拟进行可用性测试。平台基于
   Unity 开发，经设计师测试验证，有效降低了机器人原型构建成本，支持贯穿完整设计周期的快速迭代。
   部分成果发表于 AHFE 2023。
-img: assets/img/publication_preview/codesign.png
+img: assets/img/publication_preview/codesign.webp
 importance: 7
 category: research
 team: Yate Ge, Yuanda Hu, Xiaohua Sun*
@@ -43,7 +43,7 @@ Service robot interaction design lacks mature design methods and tools. Existing
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vibo_framework.jpeg" title="The platform Platform Framework" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/vibo_framework.webp" title="The platform Platform Framework" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -58,7 +58,7 @@ The platform supports modular robot prototype building: robot morphology is deco
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vibo_woz.jpeg" title="Wizard of Oz Configuration" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/vibo_woz.webp" title="Wizard of Oz Configuration" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -67,7 +67,7 @@ The platform supports modular robot prototype building: robot morphology is deco
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vibo_roleplay.jpeg" title="Robot Behavior Simulation" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/vibo_roleplay.webp" title="Robot Behavior Simulation" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -82,7 +82,7 @@ Designers drag components onto a canvas, assemble behavior blocks, connect them 
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vibo_components.jpeg" title="Behavior Components" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/vibo_components.webp" title="Behavior Components" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -91,7 +91,7 @@ Designers drag components onto a canvas, assemble behavior blocks, connect them 
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vibo_composer.png" title="Interaction Composer" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/vibo_composer.webp" title="Interaction Composer" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -104,7 +104,7 @@ The platform is built on Unity, with the host application managing assets (3D en
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vibo_host_unity.jpeg" title="Host Application" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/vibo_host_unity.webp" title="Host Application" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -113,7 +113,7 @@ The platform is built on Unity, with the host application managing assets (3D en
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vibo_scenarios.jpeg" title="Virtual Scenarios" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/vibo_scenarios.webp" title="Virtual Scenarios" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">
@@ -122,7 +122,7 @@ The platform is built on Unity, with the host application managing assets (3D en
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/vibo_exhibition.jpeg" title="Thesis Exhibition" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/vibo_exhibition.webp" title="Thesis Exhibition" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">

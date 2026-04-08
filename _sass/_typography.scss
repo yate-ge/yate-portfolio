@@ -64,6 +64,19 @@ body {
   }
 }
 
+.marker-highlight-inline {
+  background-image: linear-gradient(
+    to right,
+    rgba(100, 210, 220, 0.35),
+    rgba(100, 210, 220, 0.35)
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 0 85%;
+  padding: 0 4px;
+  margin: 0 -4px;
+}
+
 // News section
 .news {
   font-size: 0.8rem;
@@ -128,7 +141,14 @@ body {
 // Hand-drawn wavy underline
 .wavy-underline {
   text-decoration: underline wavy;
-  text-decoration-color: rgba(255, 97, 136, 0.5);
+  text-decoration-color: rgba(252, 152, 103, 0.6);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+
+.wavy-underline-green {
+  text-decoration: underline wavy;
+  text-decoration-color: rgba(169, 220, 118, 0.6);
   text-underline-offset: 3px;
   text-decoration-thickness: 1.5px;
 }
@@ -155,7 +175,7 @@ body {
 
   &::after {
     content: " \2713";
-    font-size: 0.75em;
+    font-size: 1em;
     color: rgba(169, 220, 118, 0.8);
     font-weight: 400;
     transform: rotate(-8deg);

@@ -3,7 +3,7 @@ layout: project
 title: GenFaceUI
 description: GenFaceUI explores generative personalized facial expression interfaces for intelligent agents from a meta-design perspective. Built on the GPFEI framework, it helps designers create facial templates, apply semantic tags, define context-expression rules, and iteratively test run-time generation within coherent, rule-bounded design spaces. A qualitative study with 12 designers showed gains in controllability and consistency while also revealing the need for better visual structure and lightweight explanations; I led the project's system design, prototype development, and paper writing. An early version was presented as a poster at UIST 2025, and the full research was published at CHI 2026.
 description_zh: GenFaceUI 以元设计视角切入，探索如何让设计师为智能体打造生成式个性化表情界面。我们提出 GPFEI 框架，让设计师可以创建表情模板、标注语义、制定情境与表情的映射规则，并在可控的设计空间中反复测试运行时的生成效果。12 位设计师参与的定性研究表明，系统显著提升了表情的可控性与一致性，也指出了对更直观的视觉结构和轻量化解释的需求。本人主导了系统设计、原型开发与论文撰写。早期成果以 Poster 形式发表于 UIST 2025，完整研究发表于 CHI 2026。
-img: assets/img/genfaceui_teaser.jpg
+img: assets/img/genfaceui_teaser.webp
 importance: 1
 category: research
 team: Yate Ge, Lin Tian, Yi Dai, Shuhan Pan, Yiwen Zhang, Qi Wang, Weiwei Guo*, Xiaohua Sun*
@@ -28,7 +28,7 @@ GPFEI structures the design space around three core elements: **rule-bounded gen
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/genfaceui_framework.png" title="GPFEI Framework" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/genfaceui_framework.webp" title="GPFEI Framework" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">Overview of the GPFEI framework.</div>
@@ -41,14 +41,14 @@ The system combines a design canvas, semantic element management, rule authoring
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/genfaceui_architecture.png" title="GenFaceUI Architecture" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/genfaceui_architecture.webp" title="GenFaceUI Architecture" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">GenFaceUI architecture.</div>
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/genfaceui_overview.png" title="GenFaceUI Interface" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/genfaceui_overview.webp" title="GenFaceUI Interface" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">GenFaceUI interface.</div>
@@ -61,7 +61,7 @@ The study showed that designers perceived clear gains in **controllability** and
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/genfaceui_tasks.png" title="Designer Study Tasks" class="img-fluid rounded" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/genfaceui_tasks.webp" title="Designer Study Tasks" class="img-fluid rounded" zoomable=true %}
   </div>
 </div>
 <div class="caption">Three design tasks used in the study.</div>

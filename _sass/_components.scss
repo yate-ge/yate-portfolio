@@ -140,29 +140,6 @@ ul.task-list input[type="checkbox"] {
     margin-bottom: 0.5rem;
   }
 
-  .card-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.3rem;
-    margin-top: 0.5rem;
-  }
-
-  .card-tag {
-    font-size: 0.65rem;
-    padding: 0.15rem 0.5rem;
-    border-radius: 1rem;
-    white-space: nowrap;
-
-    &.tag-color-0 { background: #e8f0fe; color: #1967d2; border: 1px solid #c5d9f7; }
-    &.tag-color-1 { background: #fce8e6; color: #c5221f; border: 1px solid #f5c6c2; }
-    &.tag-color-2 { background: #e6f4ea; color: #1e8e3e; border: 1px solid #c0e2cb; }
-    &.tag-color-3 { background: #fef7e0; color: #b05a00; border: 1px solid #f5dfab; }
-    &.tag-color-4 { background: #f3e8fd; color: #7627bb; border: 1px solid #dfc5f5; }
-    &.tag-color-5 { background: #e0f7fa; color: #00838f; border: 1px solid #b2ebf2; }
-    &.tag-color-6 { background: #fce4ec; color: #c2185b; border: 1px solid #f8bbd0; }
-    &.tag-color-7 { background: #e8eaf6; color: #3949ab; border: 1px solid #c5cae9; }
-  }
-
   .card-body {
     padding: 1.25rem 1.25rem 1.25rem 1.25rem;
   }
@@ -259,6 +236,29 @@ ul.task-list input[type="checkbox"] {
     margin-right: 0;
   }
 
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .card-tag {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 1rem;
+    white-space: nowrap;
+
+    &.tag-color-0 { background: #e8f0fe; color: #1967d2; border: 1px solid #c5d9f7; }
+    &.tag-color-1 { background: #fce8e6; color: #c5221f; border: 1px solid #f5c6c2; }
+    &.tag-color-2 { background: #e6f4ea; color: #1e8e3e; border: 1px solid #c0e2cb; }
+    &.tag-color-3 { background: #fef7e0; color: #b05a00; border: 1px solid #f5dfab; }
+    &.tag-color-4 { background: #f3e8fd; color: #7627bb; border: 1px solid #dfc5f5; }
+    &.tag-color-5 { background: #e0f7fa; color: #00838f; border: 1px solid #b2ebf2; }
+    &.tag-color-6 { background: #fce4ec; color: #c2185b; border: 1px solid #f8bbd0; }
+    &.tag-color-7 { background: #e8eaf6; color: #3949ab; border: 1px solid #c5cae9; }
+  }
+
   .card {
     img {
       width: 100%;
@@ -270,14 +270,14 @@ ul.task-list input[type="checkbox"] {
   }
 
   .project-inline {
-    padding: 0.25rem 6rem 1.25rem 0;
+    padding: 0.25rem 0 1.25rem 0;
+    margin-right: 6rem;
     border-bottom: 1px solid var(--global-divider-color);
     background: transparent;
-    width: 100%;
 
     .project-inline-layout {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 1.75rem;
     }
 
@@ -316,7 +316,7 @@ ul.task-list input[type="checkbox"] {
       line-height: 1.6;
       margin-bottom: 0.5rem;
       display: -webkit-box;
-      -webkit-line-clamp: 6;
+      -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;

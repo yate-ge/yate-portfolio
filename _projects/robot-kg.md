@@ -12,7 +12,7 @@ description_zh: >-
   本项目探索基于用户参与的可视分析方法来构建与修正服务机器人个性化知识图谱。
   本人参与了可视化界面与交互设计，重点研究如何将工作知识图谱进行可视化呈现，
   使用户能够检视潜在错误、输入领域知识，并通过交互界面迭代修正图谱。
-img: assets/img/kg_preview.png
+img: assets/img/kg_preview.webp
 importance: 9
 category: design work
 role: Visualization Interface & Interaction Design
@@ -30,7 +30,7 @@ The visualization maps the working knowledge graph onto a spatial layout, encodi
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/kg_preview.png" title="工作知识图谱可视化初步设计" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/img/kg_preview.webp" title="工作知识图谱可视化初步设计" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 <div class="caption">Working knowledge graph visualization: concentric rings (a.1–a.3) organize task-relevant concepts by topological distance; node colors encode entity types (people, objects, spaces); edge colors distinguish knowledge sources and relationship types; the spatial floor plan (e) provides environmental context.</div>
