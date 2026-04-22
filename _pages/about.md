@@ -30,4 +30,4 @@ As an interaction designer and researcher, I am dedicated to <span class="marker
 
 <br>
 
-我是同济大学设计创意学院设计学博士候选人，研究方向为交互设计，师从[孙效华](https://designschool.sustech.edu.cn/about/team/faculty/697.html)教授与[郭玮玮](https://weiweiguo-idea.github.io/)教授。研究兴趣涵盖<span class="wavy-underline">人机交互</span>、<span class="wavy-underline">人机器人交互</span>、<span class="wavy-underline">人智能体交互</span>及 <span class="wavy-underline">AR/VR</span>。研究成果发表于 CHI、UIST、HRI、VL/HCC 等国际顶级会议，并持有多项发明专利。作为交互设计师与研究者，我致力于<span class="marker-highlight-inline">构建人与智能系统之间的新型交互方式，探索创新的人工智能应用</span>。当前研究聚焦于**智能体系统的个性化交互**——融合生成式界面、持续学习、AR/VR 技术与终端用户编程方法，探索面向未来的人智能体共生交互新范式。
+我是同济大学设计创意学院设计学博士候选人，研究方向为交互设计，师从[孙效华](https://designschool.sustech.edu.cn/about/team/faculty/697.html)教授与[郭炜炜](https://weiweiguo-idea.github.io/)教授。研究兴趣涵盖<span class="wavy-underline">人机交互</span>、<span class="wavy-underline">人机器人交互</span>、<span class="wavy-underline">人智能体交互</span>及 <span class="wavy-underline">AR/VR</span>。研究成果发表于 CHI、UIST、HRI、VL/HCC 等国际顶级会议，并持有多项发明专利。作为交互设计师与研究者，我致力于<span class="marker-highlight-inline">构建人与智能系统之间的新型交互方式，探索创新的人工智能应用</span>。当前研究聚焦于**智能体系统的个性化交互**——融合生成式界面、持续学习、AR/VR 技术与终端用户编程方法，探索面向未来的人智能体共生交互新范式。
